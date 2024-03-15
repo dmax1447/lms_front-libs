@@ -1,0 +1,24 @@
+.tooltip {
+  display: block !important;
+  z-index: 99999;
+
+  &.popover {
+    .popover-inner {
+      background: white;
+      color: black;
+      padding: 0;
+    }
+  }
+
+  &[aria-hidden='true'] {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .15s, visibility .15s;
+  }
+
+  &[aria-hidden='false'] {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity .15s;
+  }
+}

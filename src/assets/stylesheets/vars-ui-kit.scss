@@ -1,0 +1,158 @@
+// Отступы
+@each $i in 1 2 3 4 5 6 8 10 12 15 20 {
+  .a-padding-x#{$i} {
+    padding: rem($i * 4px);
+  }
+}
+
+@each $i in 1 2 3 4 5 6 8 10 12 15 20 {
+  .a-padding-x-#{$i} {
+    padding-left: rem($i * 4px);
+    padding-right: rem($i * 4px);
+  }
+}
+
+@each $i in 1 2 3 4 5 6 8 10 12 15 20 {
+  .a-padding-y-#{$i} {
+    padding-top: rem($i * 4px);
+    padding-bottom: rem($i * 4px);
+  }
+}
+
+@each $i in 1 2 3 4 5 6 8 10 12 15 20 {
+  .a-padding-t-#{$i} {
+    padding-top: rem($i * 4px);
+  }
+}
+
+@each $i in 1 2 3 4 5 6 8 10 12 15 20 {
+  .a-padding-b-#{$i} {
+    padding-bottom: rem($i * 4px);
+  }
+}
+
+@each $i in 1 2 3 4 5 6 8 10 12 15 20 {
+  .a-margin-b-#{$i} {
+    margin-bottom: rem($i * 4px);
+  }
+}
+
+@each $i in 1 2 3 4 5 6 8 10 12 15 20 {
+  .a-margin-t-#{$i} {
+    margin-top: rem($i * 4px);
+  }
+}
+
+@each $i in 1 2 3 4 5 6 8 10 12 15 20 {
+  .a-margin-l-#{$i} {
+    margin-left: rem($i * 4px);
+  }
+}
+
+@each $i in 1 2 3 4 5 6 8 10 12 15 20 {
+  .a-margin-r-#{$i} {
+    margin-right: rem($i * 4px);
+  }
+}
+
+
+// Typography
+@each $i, $fs, $lh in (1 56 64, 2 52 60, 3 48 56, 4 40 48, 5 36 44, 6 32 40) {
+  .font-h#{$i} {
+    font-size: rem($fs);
+    line-height: rem($lh);
+    font-weight: 500;
+  }
+}
+
+// Text
+@each $size, $fs, $lh in (xxl 24 32, xl 20 28, l 18 24, m 16 22, s 14 20, xs 12 16) {
+  .font-body-#{$size}-300 {
+    font-size: rem($fs);
+    line-height: rem($lh);
+    font-weight: 300;
+  }
+  .font-body-#{$size}-400 {
+    font-size: rem($fs);
+    line-height: rem($lh);
+    font-weight: 400;
+  }
+  .font-body-#{$size}-500 {
+    font-size: rem($fs);
+    line-height: rem($lh);
+    font-weight: 500;
+  }
+}
+
+// Interface
+@each $name, $s in (l 20, m 18, s 16, xs 14) {
+  .font-button-#{$name},
+  .font-link-#{$name} {
+    font-size: rem($s);
+    line-height: rem($s);
+    font-weight: 500;
+  }
+}
+
+// COLORS
+// Text
+@each $n, $c in
+  primary #343A40,
+  secondary #707C8C,
+  tertiary #A0A9B2,
+  contrast #FFFFFF,
+  accent #2C50EE
+{
+  .color-text-#{$n} {
+    color: $c;
+  }
+}
+// Links
+@each $n, $c in
+  accent #2C50EE,
+  visited #8596E4,
+  contrast #FFFFFF
+{
+  .color-link-#{$n} {
+    color: $c;
+  }
+}
+
+// Icons
+@each $n, $c in
+  primary #343A40,
+  secondary #707C8C,
+  tertiary #A0A9B2,
+  accent1 #2C50EE,
+  accent2 #6DD230,
+  accent3 #FE1139,
+  accent4 #FFAB2B,
+  contrast #FFFFFF,
+{
+  .color-icon-#{$n} {
+    color: $c;
+  }
+}
+
+// Buttons
+@each $n, $c in
+  disabled #343A40,
+  border #707C8C,
+  accent #2C50EE,
+  contrast #FFFFFF,
+  secondary #DFE5FF
+{
+  .color-button-#{$n} {
+    background-color: $c;
+  }
+}
+// Backgrounds
+@each $name, $c in
+  primary #FFFFFF,
+  secondary #F0F3FF,
+  tertiary #F5F7FA,
+  contrast #343A40, {
+  .color-bg-#{$name} {
+    background-color: $c;
+  }
+}

@@ -1,0 +1,144 @@
+.btn {
+  box-shadow: none !important;
+  font-size: $font-size;
+  line-height: 100%;
+  border: none;
+  -webkit-appearance: none;
+  padding: 12px 26px;
+}
+
+.btn-transparent {
+  cursor: pointer;
+  border: none;
+}
+
+.btn-lms {
+  font-size: $font-size;
+  height: 34px;
+  transition: background 0.2s ease;
+
+  &:hover {
+    transition: background 0.2s ease;
+  }
+}
+
+.btn-circle {
+  width: 52px;
+  height: 52px;
+  border-radius: 35px;
+  text-align: center;
+  padding-left: 0;
+  padding-right: 0;
+  font-size: 16px;
+  white-space: normal;
+}
+
+.btn-light {
+  border-color: transparent !important;
+
+  &:hover {
+    background: $white-hover;
+  }
+
+  &:not(:hover):not(:active) {
+    background: #fff;
+  }
+}
+
+.btn-primary {
+  background-color: $primary-color;
+  border-color: $primary-color;
+
+  &:hover {
+    background-color: $primary-color-transparent;
+  }
+  &.disabled {
+    background-color: $gray-cfc;
+    box-shadow: 0px 4px 10px rgba(207, 207, 207, 0.25);
+    opacity: 1;
+  }
+  &:not(:disabled):not(.disabled).active,
+  &:not(:disabled):not(.disabled):active {
+    background-color: $primary-color;
+    border-color: $primary-color;
+  }
+}
+
+.btn-secondary {
+  background: $secondary-color;
+  border-color: $secondary-color;
+  color: $primary-color;
+
+  &:hover {
+    background: $secondary-color;
+    border-color: $secondary-color;
+    color: $primary-color;
+  }
+  &:active {
+    background: $secondary-color !important;
+    border-color: $primary-color !important;
+    color: $primary-color !important;
+  }
+  &:focus {
+    background: $secondary-color !important;
+    border-color: $primary-color !important;
+    color: $primary-color !important;
+  }
+}
+
+.btn-warning {
+  background: $warning-color;
+  color: $white-color;
+
+  &:hover {
+    color: $white-color;
+  }
+  &.disabled {
+    color: $white-color;
+  }
+}
+
+.btn-delete {
+  background: $gray-color-3;
+  color: $standard-color;
+
+  &:hover,&:focus {
+    color: $error-color;
+    background: $error-color-transparent;
+  }
+}
+
+
+button {
+  box-shadow: none !important;
+}
+
+a.btn,
+button {
+  line-height: 1 !important;
+}
+
+
+// Button Shared Styles
+.btn-primary,
+.btn-secondary,
+.btn-delete,
+.btn-warning {
+  border-radius: 0.25rem;
+}
+
+.btn-red {
+  background: $red-color;
+  color: $white-color;
+  &:hover {
+    color: $white-color;
+  }
+}
+
+.btn-muted{
+  background-color: #95A4B4;
+  color: $white-color;
+  &:hover {
+    color: $white-color;
+  }
+}

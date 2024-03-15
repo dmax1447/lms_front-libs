@@ -1,0 +1,101 @@
+//Left and right padding
+$px: 0.8rem;
+//----//
+
+.container-with-label {
+  margin: 0;
+  width: 100%;
+  position: relative;
+
+  &--focused &__label {
+    top: 0.3rem;
+    transform: translateY(0) scale(0.85);
+  }
+  &--has-value &__label {
+    top: 0.3rem;
+    transform: translateY(0) scale(0.85);
+  }
+  &-wrapper {
+    padding-bottom: 0;
+    width: 100%;
+  }
+  &__label {
+    pointer-events: none;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    max-width: 80%;
+    transform: translateY(-50%) scale(1);
+    transform-origin: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    transition: all 0.2s ease-out;
+    margin-bottom: 0;
+    z-index: 1;
+    span {
+      color: var(--color-text-tertiary);
+      letter-spacing: 0.25px;
+    }
+  }
+
+  input:placeholder-shown ~ .container-with-label__label,
+  input.input--has-value ~ .container-with-label__label,
+  .autofill-fix ~ .container-with-label__label {
+    top: 0.3rem;
+    transform: translateY(0) scale(0.85);
+  }
+}
+//Validation styles
+.container-with-label--error {
+
+}
+.container-with-label__validation-msg {
+  color: var(--color-text-error);
+  position: absolute;
+  left: 0;
+  bottom: -16px;
+}
+
+//Mods styles
+.container-with-label--disabled {
+  pointer-events: none;
+}
+.container-with-label--readonly {
+  cursor: default;
+  border: none;
+  padding-left: 0;
+  padding-right: 0;
+  .container-with-label__label {
+    left: 0;
+  }
+}
+
+.input--inline {
+  input.input__control {
+    height: auto;
+    margin-left: 0.4rem;
+    padding-left: 0;
+    border: none;
+    border-bottom: 1px solid var(--color-text-accent);
+    border-radius: 0;
+    box-shadow: none !important;
+    outline: none !important;
+  }
+
+  .input.failed > input.input__control {
+    box-shadow: none !important;
+    border: none;
+    border-bottom: 1px solid var(--error-color);
+
+    &:hover {
+      border-color: $error-hover;
+      box-shadow: none !important;
+    }
+  }
+
+  .container-with-label__validation-msg {
+    display: none;
+  }
+}

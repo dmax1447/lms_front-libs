@@ -1,0 +1,319 @@
+// Breakpoints
+$sm: 576;
+$md: 768;
+$lg: 992;
+$xl: 1200;
+
+// Fonts
+$browser-context: 16;
+
+$font-size-xs: 0.65rem;
+$font-size-sm: 0.75rem;
+$font-size: 0.82rem;
+$font-size-slg: 0.88rem;
+$font-size-15: 0.9375rem;
+$font-size-lg: 1rem;
+$font-size-mlg: 1.1rem;
+
+// 20px
+$font-size-lgl: 1.25rem;
+$font-size-xl: 1.65rem;
+
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-semibold: 500;
+$font-weight-bolder: 600;
+$font-weight-bold: 700;
+
+// Colors
+$gray-color: #2f3c43;
+$gray-color-text: #99a9b9;
+$gray-color-1: #ececf2;
+$gray-color-2: #f5f5fa;
+$gray-color-3: #eee;
+$gray-color-4: #eef2f3;
+$gray-color-5: #e2e4e9;
+$gray-color-6: #f4f7fa;
+$gray-color-7: #4e4e4e;
+$gray-color-8: #bebec1;
+$gray-color-9: #bbbacf;
+$gray-color-10: #e4eaec;
+$gray-color-11: #bfc1c7;
+$gray-color-12: #00103d1f;
+$gray-color-13: #6c757d;
+$gray-color-14: #f6f6f9;
+
+$gray-ecf: #ecf2f3;
+$gray-6c7: #6c757d;
+$gray-979: #979797;
+$gray-cfc: #cfcfcf;
+$gray-747: #747474;
+$gray-e7e: #e7e6e6;
+$gray-f1f1: #f1f1f5;
+$gray-464: #464659;
+$gray-ecf: #ecf2f3;
+$gray-e2e: #e2eaec;
+$gray-f7f: #f7f7fc;
+
+$gray-color-transparent: rgba(47, 60, 67, 0.8);
+$gray-light: #e9e9f0;
+$gray-light-2: #f9f9f9;
+$gray-light-3: #fbfbfd;
+$gray-light-4: #e1e7ff;
+$gray-light-5: #d5d5d5;
+$gray-background-alt: rgba(236, 236, 240, 0.54);
+$gray-a0a: #a0a9b2;
+$gray-e5e: #e5e5e5;
+$gray-747: #747474;
+$gray-343: #343a40;
+$gray-bcb: #bcb4b4;
+$gray-3f4: #3f4447;
+$gray-d9e: #d9e0e4;
+$gray-eef: #e9ecef;
+$gray-11b: #16181b;
+
+$green-color: #47a63e;
+$green-color-2: #6cc564;
+
+$input-border-color: #e4eaec;
+$input-disabled: #f7f9fa;
+$input-focus: rgba(73, 88, 205, 0.6);
+$input-file-default: #f7f9fa;
+
+$btn-border-disabled: #e3e1e1;
+$btn-background-disabled: #e3e1e1;
+$btn-color-disabled: #707c8c;
+
+$primary-color: #DE0A26;
+$primary-color-active: #FFF2F3;
+$primary-color-gloss: #F94A4E;
+$primary-color-transparent: rgba(222, 10, 38, 0.9);
+$primary-color-transparent-alt: rgba(222, 10, 38, 0.2);
+$primary-color-transparent-cover: rgba(249, 74, 78, 0.7);
+
+$sidebar-color-item-active: #FFF2F3;
+$sidebar-color-vertical-separator: #FFBABC;
+$sidebar-color-item-hover: #F5F5F5;
+$sidebar-color-item-text-active: #DE0A26;
+
+$secondary-color: #FFE8ED;
+$secondary-color-fade: rgba(255, 232, 237, 0.3);
+
+$blue-light: #e9ecff;
+$blue-light-color: #eff3fe;
+$blue-light-color-2: #8280a8;
+$blue-light-color-3: #dbe2ff;
+$blue-light-f3f: #f3f7fa;
+$blue-color: #f1f5f9;
+$blue-color-2: #3481da;
+$blue-color-3: #4a90e2;
+$blue-color-4: #dbe2ff;
+$blue-color-5: #3056ff;
+$blue-color-6: #7a93ff;
+$blue-dae: #daebfe;
+$blue-90c: #90c5ff;
+
+$red-color: #ef5757;
+$red-muted: #ffbdbd;
+
+$black-color-1: #1c1d21;
+$black-color-2: #28282c;
+$black-color-transparent: rgba(40, 40, 44, 0.45);
+$black-color-3: #343440;
+$black-color-4: #343a40;
+$black-172: #172b44;
+
+$background-color: #F5F5F5;
+$background-color-2: #fbfafd;
+$background-color-3: #f0f3f5;
+$background-color-dark: #dbdbdb;
+
+$button-disabled-2: #f2f2f2;
+$button-secondary: #dfe5ff;
+
+$orange-color: #f5a623;
+
+$warning-color: #ffab2b;
+$warning-color-transparent: rgba(255, 171, 43, 0.2);
+
+$error-color: #f30e36;
+$error-color-transparent: rgba(254, 77, 151, 0.2);
+
+$wrong-color: #e80404;
+$wrong-color-2: #fe1139;
+$wrong-color-3: #ffcfd7;
+
+$error-color-main: #fe1139;
+$error-color-focus: #ffc4ce;
+$error-color-hover: #ffeaee;
+
+$success-color: #6dd230;
+$success-color-2: #28a745;
+$success-color-3: #5bc251;
+$success-color-transparent: rgba(109, 210, 48, 0.2);
+$success-color-transparent-2: rgba(40, 167, 69, 0.22);
+
+$standard-color: #8181a5;
+$standard-color-transparent: rgba(129, 129, 165, 0.4);
+$standard-color-transparent-2: rgba(129, 129, 165, 0.15);
+
+$white-color: #fff;
+$white-transparent: rgba(255, 255, 255, 0.8);
+$white-hover: #f8f9fa;
+$white-slider: #ccc;
+
+// Sizes
+$sidebar-width: 280px;
+$sidebar-width-minimized: 70px;
+$navbar-height: 56px;
+
+// Courses
+$cover-radius: 12px;
+
+// Course Playlist
+$course-playlist-width: 280px;
+
+// New Design Style Guides Colors
+$text-color-dark: #343a40;
+$icon-disabled: #B2BBC4;
+$icon-color: #343A40;
+$gray-bg: #454A4F;
+$border-hover-shadow: #ECF0FD;
+
+$error-focus: #FFC4CE;
+$error-hover: #FFEAEE;
+$disabled: #F2F2F2;
+
+// New correct vars
+// text
+$color-table-item-archived:#f2f2f2;
+$color-text-primary: #0D1140; // Основной темный цвет для текста
+$color-text-secondary: #87898F; // Текст для сносок, аттрибутов, аннотаций
+$color-text-tertiary: #BABCC2; // Цвет текста для второстепенных и неактивных элементов
+$color-text-contrast: #FFFFFF; // Инверсный/контрастный цвет для шрифтов на темных тонах
+$color-text-accent: #FF0A47; // Акцентный цвет текста
+$color-text-error: #F94A4E; // Цвет ошибки (валидация)
+$color-text-alarm: #FF0A47;
+@mixin text-xs {
+  font-size: 12px;
+  line-height: 16px;
+}
+@mixin text-s {
+  font-size: 14px;
+  line-height: 20px;
+}
+@mixin text-m {
+  font-size: 16px;
+  line-height: 22px;
+}
+@mixin text-l {
+  font-size: 18px;
+  line-height: 24px;
+}
+@mixin text-xl {
+  font-size: 20px;
+  line-height: 28px;
+}
+@mixin text-xxl {
+  font-size: 24px;
+  line-height: 32px;
+}
+
+
+  //links
+$color-link-accent:#DE0A26; // Цвет для основных ссылок
+$color-link-visited: #8596E4; // Цвет посещенной ссылки
+$color-link-contrast:#FFFFFF; // Цвет ссылки на инверсном фоне
+
+//icons
+$color-icon-primary: #0D1140; // Основной цвет иконок
+$color-icon-secondary: #6E708C; // Второстепенный цвет иконок
+$color-icon-tertiary: #9EA0B3; // Третьестепенный цвет иконок
+$color-icon-accent: #DE0A26; // Акцентный цвет иконок
+$color-icon-accent-success:#6DD22A; // Акцентный цвет иконок - зеленый
+$color-icon-accent-danger:#FF0A47; // Акцентный цвет иконок - красный
+$color-icon-accent-warn:#FFAB2B; // Акцентный цвет иконок - оранжевый
+$color-icon-contrast:#FFFFFF; // Инверсный/контрастный цвет иконок
+$color-icon-error: #FE1139; // Цвет ошибки (валидация)
+$color-icon-accent-primary-new: #2C50EE;
+$color-icon-accent-success-new: #4AAB53;
+$color-icon-accent-primary-new: #2C50EE;
+$color-icon-accent-error-new: #DE0A26;
+
+  // buttons
+$color-button-normal: #FF0A47;
+$color-button-primary: #DE0A26;
+$color-button-primary-active: #BF090E;
+$color-button-tertiary-hover: #CB0D1C;
+$color-button-bg-light:#FFBABC;
+$color-button--bg-light-active: #FFA2A4;
+$color-button-disabled:#F2F2F2; // Цвет кнопок в неактивном состоянии
+$color-button-text-disabled: #707c8c; // Цвет текста в кнопках в неактивном состоянии
+$color-button-border:#707C8C; // Цвет обводки кнопок на контрастном фоне
+$color-button-accent:#DE0A26; // Акцентный цвет кнопки
+$color-button-contrast:#FFFFFF; // Инверсный/контрастный цвет кнопок
+$color-button-secondary:#DFE5FF; //Инверсный/контрастный цвет кнопок
+$color-button-active:#BF090E; // Акцентный цвет кнопки в активном состоянии
+
+$font-button-l: 18px;
+$font-button-m: 16px;
+$font-button-s: 14px;
+$font-button-xs: 12px;
+$font-weight-button-default:500;
+$line-height-button-default:1;
+$radius-button: 4px;
+$padding-button-default: 12px 28px;
+
+// todo: стили из фигмы не соответствуют
+$box-shadow-button-primary: 0px 4px 10px rgba(241, 16, 16, 0.35);
+$box-shadow-button-secondary: none;
+$box-shadow-button-light: 0px 4px 10px rgba(146, 146, 146, 0.15);
+$box-shadow-button-icon: 0px 4px 10px rgba(146, 146, 146, 0.15);
+$box-shadow-button-hover: 0px 4px 10px rgba(241, 16, 16, 0.35);
+
+// todo: стили из фигмы не соответствуют
+$box-shadow-button-hover: 0px 4px 10px rgba(241, 16, 16, 0.35);
+
+
+$table-row-active-shadow-color: #FFA1A4;
+
+
+// background
+$color-bg-primary: #FFFFFF; // Основной цвет фона
+$color-bg-secondary: #F7F9FD; // Второстепенный цвет фона
+$color-bg-tertiary: #F5F5F5; // Третьестепенный цвет фона
+$color-bg-contrast: #343A40; // Инверсный/контрастный цвет фона
+$color-bg-accent: #DE0A26; // Акцентный цвет фона
+$color-bg-error: #FE1139; // Акцентный цвет фона
+
+// todo: в макетах не соответствуют цвета бордеров, Дизайнер сказал использовать максимально похожий цвет из New correct vars
+// borders
+$border-radius: 4px;
+$border-color: #E3E1E1 ;
+$border-hover-color: #E3E1E1 ;
+$border-focus-color: #DFE5FF ;
+$disabled-border: #f7f9fa ;
+
+
+
+$border-hover-shadow: #ECF0FD;
+
+
+$c-button-tertiary: #f0f3ff;
+
+
+// border-radius
+$border-radius: 4px;
+
+// TODO:Дизы захотели отдельно стилизовать пагнацию (цвета)
+// pagination
+$pagination-color-primary:#252525;
+$pagination-color-secondary:#A0A9B2;
+$pagination-color-tertiary:#707C8C;
+$pagination-color-contrast:#fff;
+$pagination-arrow-color:#343A40;
+$pagination-arrow-color-disabled:#B2BBC4;
+
+// дополнительно для client_road
+$fields-stroke-primary: #EAEAEB;
+$border-stroke-cards: #D3D8E3;

@@ -1,0 +1,404 @@
+@import 'variables';
+
+// TinyMCE NoKey Dev Fixes
+.tox-statusbar__branding,
+.tox-notification.tox-notification--in.tox-notification--warning {
+  display: none;
+}
+
+.tox {
+  .tox-toolbar__group {
+    padding: 0 !important;
+  }
+  .tox-tbtn--select {
+    cursor:pointer;
+  }
+  .tox-tbtn--bespoke {
+    &.tox-tbtn:hover {
+      background-color: inherit !important;
+    }
+    .tox-tbtn__select-label {
+      cursor:pointer;
+      font-family: 'Rubik';
+
+    }
+  }
+}
+.tox:not([dir=rtl]) .tox-form__controls-h-stack>:not(:first-child) {
+  margin-left: 20px !important;
+}
+// TinyMCE Styles
+.tox-tinymce {
+  border: 1px solid transparent !important;
+  border-radius: 4px !important;
+}
+
+.editor-block {
+  border-radius: var(--border-radius);
+  background-color: var(--color-bg-primary);
+  border: 1px solid var(--btn-border-disabled);
+}
+
+.tox .tox-toolbar,
+.tox .tox-toolbar__overflow,
+.tox .tox-toolbar__primary {
+  background: none !important;
+}
+
+.tox-toolbar__overflow {
+  & .tox-toolbar__group {
+    margin: 8px 0 !important;
+  }
+  border-top: 1px solid #e3e1e1 !important;
+}
+
+.tox .tox-toolbar__overflow {
+  background-color: #fff !important;
+}
+
+.tox .tox-tbtn:hover,
+.tox .tox-tbtn--enabled {
+  background-color: var(--color-bg-secondary) !important;
+}
+
+.tox:not([dir='rtl']) .tox-toolbar__group:not(:last-of-type) {
+  border-right: none !important;
+}
+
+.tox-toolbar__primary {
+  padding: 8px 12px !important;
+}
+
+.tox-toolbar__overflow {
+  padding: 0 12px !important;
+}
+
+.tox .tox-statusbar {
+  border-top: none !important;
+}
+.tox .tox-selectfield select {
+  height: 52px;
+}
+.tox .tox-listboxfield .tox-listbox--select {
+  height: 52px;
+}
+// Styled HTML
+.html-text {
+  p {
+    margin-bottom: 0;
+  }
+  a {
+    color: var(--color-text-secondary)
+  }
+}
+.tox .tox-color-input span {
+  top: 13px !important;
+}
+.code {
+  max-width: 100%;
+}
+
+.prepared-link {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 150px;
+  display: inline-block;
+  text-decoration: underline;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+.tox .tox-button--secondary:focus:not(:disabled) {
+  color:var(--color-text-accent) !important;
+  background-color: transparent !important;
+  border-color:transparent !important;
+}
+.tox .tox-tbtn[aria-label="Вставить/изменить изображение"] {
+  .tox-icon.tox-tbtn__icon-wrap {
+    background-image: url('../images/picture.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 24px;
+    width: 24px;
+    display: block;
+    height: 24px;
+  }
+  &:hover {
+
+  }
+  svg {
+    display: none;
+  }
+}
+.tox-editor-container{
+  background-color: #fff !important;
+  justify-content: center;
+}
+.tox-selectfield select[size="1"] {
+  border:1px solid var(--border-color) !important;
+}
+
+.tox.tox-tinymce.tox-tinymce-inline {
+  border: 1px solid #e3e1e1 !important;
+  height: 52px;
+  .tox-editor-header {
+    border: none;
+  }
+}
+.tox-toolbar-overlord {
+  border-bottom: 1px solid var(--input-border-color) !important;
+}
+
+.tox-tbtn[title='Блоки'] {
+  width: 239px !important;
+  display: flex !important;
+  justify-content: space-between !important;
+}
+.tox-tbtn[title='Больше...'] {
+  position: relative;
+  & svg {
+    opacity: 0;
+  }
+  &:before {
+    content: url('../icons/points.svg');
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.tox-tbtn[title='Шрифты'],
+.tox-tbtn[title='Блоки'] {
+  border: 1px solid $input-border-color !important;
+}
+
+.tox .tox-tbtn--select {
+  padding: 0 8px 0 8px !important;
+  margin-top: 1px !important;
+  margin-bottom: 2px !important;
+}
+
+.tox-tbtn__select-label {
+  font-size: $font-size-slg !important;
+  font-weight: $font-weight-normal !important;
+}
+
+.tox {
+  .tox-split-button {
+    margin: 2px 2px 3px 2px !important;
+  }
+  .tox-tbtn {
+    margin: 2px 2px 3px 2px !important;
+    &:not(.tox-tbtn--disabled){
+      svg {
+        fill:$color-text-primary !important;
+      }
+    }
+  }
+  .tox p,
+  .mce-content-body p {
+    margin: 0 !important;
+  }
+  .tox-dialog {
+    max-width: 600px !important;
+  }
+  .tox-checkbox__icons {
+    border-color: $color-icon-accent !important;
+    color: $color-icon-accent !important;
+    box-shadow: none !important;
+    .tox-icon {
+      outline: $color-icon-accent !important;
+    }
+    .tox-checkbox-icon__checked {
+      svg {
+        fill:$color-icon-accent !important;
+      }
+    }
+  }
+  .tox-button--naked {
+    &:hover:not(:disabled) {
+      background-color:$color-button-disabled !important;
+      border-color:$color-button-disabled !important;
+    }
+  }
+  .tox-dialog-wrap__backdrop {
+    background-color: $color-bg-contrast !important;
+  }
+  .tox-dialog__body-content{
+    max-height: 1000px !important;
+    padding: 24px 16px !important;
+  }
+  .tox-label {
+    font-weight: 400 !important;
+    font-size: 14px !important;
+    line-height: 20px !important;
+    color: $color-text-tertiary !important;
+    white-space: normal !important;
+  }
+  .tox-collection__item-checkmark {
+    display: none !important;
+  }
+  .tox-collection__item {
+    color:$color-text-primary !important;
+    &--active {
+      background-color: $disabled !important;
+    }
+  }
+  .tox-menu {
+    border: 1px solid #E3E1E1;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+  }
+  .tox-collection__item-label {
+    font-family: "Rubik", sans-serif;
+  }
+  .tox-form__group {
+    &:nth-child(1), &:nth-child(2){
+      width: 100%;
+    }
+    &:nth-child(4){
+      margin-bottom: 0 !important;
+    }
+  }
+  .tox-control-wrap {
+    flex:1;
+  }
+  .tox-form__group {
+    margin-bottom: 24px !important;
+    &:last-child {
+      margin-bottom: 0 !important;
+    }
+  }
+  .tox-form__controls-h-stack {
+    .tox-form__group {
+      margin-bottom: 0 !important;
+      &:nth-child(2){
+        margin-left: 24px !important;
+      }
+    }
+  }
+  .tox-textfield {
+    border-radius:$border-radius !important;
+    height: 52px;
+    padding-left: 12px;
+  }
+  .tox-form__grid--2col>.tox-form__group {
+    flex:unset;
+  }
+  .tox-dialog {
+    border-radius:$border-radius !important;
+    border:none !important;
+    box-shadow:none !important;
+    .tox-button--naked {
+      color:$color-icon-primary !important;
+    }
+    iframe {
+      width: 100%;
+      height: 513px;
+      display: block;
+    }
+    .tox-listbox {
+      &--select {
+        font-family: "Rubik", sans-serif;
+        border:1px solid $border-color !important;
+        padding-top: 6px !important;
+        padding-bottom: 6px !important;
+        color: $color-text-primary !important;
+        .tox-listbox__select-label {
+          font-family: "Rubik", sans-serif;
+          pointer-events: none;
+          margin-left: 0;
+        }
+      }
+    }
+    .tox-checkbox__label {
+      font-family: "Rubik", sans-serif;
+      color: $color-text-primary;
+    }
+    .tox-textfield, .tox-textarea {
+      font-family: "Rubik", sans-serif;
+      border:1px solid $border-color;
+      transition:.2s;
+      color:$color-text-primary;
+      border-radius: $border-radius !important;
+      padding-left: 12px;
+      &:hover {
+        border-color: $border-hover-color;
+        box-shadow: 0 0 3px $border-hover-color;
+      }
+      &:focus {
+        border-color:$border-focus-color;
+        box-shadow: 0 0 3px $border-focus-color;
+      }
+    }
+    &__footer {
+      .tox-button {
+        font-family: "Rubik", sans-serif;
+        @include text-s;
+        line-height: 1;
+        height: 39px;
+        transition: background 0.2s ease;
+        padding: 0 26px;
+        font-weight: 500;
+        color:$color-text-contrast;
+        border-radius:$border-radius;
+        box-shadow: 0 4px 10px rgba(16, 156, 241, 0.35);
+        background-color:$color-button-accent;
+        &:hover {
+          background-color: $color-button-accent !important;
+          color:$color-icon-contrast !important;
+        }
+        &--secondary {
+          color: $color-button-accent;
+          background-color: transparent;
+          border:none;
+          &:hover {
+            color: $color-button-accent !important;
+            background-color: transparent !important;
+          }
+        }
+      }
+    }
+    .tox-collection__item {
+      color:$color-text-primary;
+      &--active:not(.tox-collection__item--state-disabled) {
+        background-color: $color-bg-tertiary !important;
+        color:$color-text-accent !important;
+      }
+    }
+    .tox-dialog__body-nav-item {
+      font-family: "Rubik", sans-serif;
+      color:$color-text-primary !important;
+      border-bottom:none !important;
+      transition:color .2s;
+      background-color: transparent !important;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      &--active {
+        color:$color-text-accent !important;
+      }
+    }
+    .tox-dialog__title {
+      font-family: "Rubik", sans-serif;
+      font-weight: 500;
+      @include text-m;
+      color:$color-text-primary;
+    }
+    .tox-dialog__header {
+      padding: 24px 16px 0;
+      .tox-button {
+        display: none;
+      }
+    }
+    .tox-dialog__footer {
+      border-top:none;
+      padding-top: 0;
+      padding-bottom: 24px;
+    }
+    .tox-collection--grid .tox-collection__group {
+      @include scroll;
+    }
+  }
+}
