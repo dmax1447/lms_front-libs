@@ -1,6 +1,7 @@
 const { merge } = require("webpack-merge");
 const singleSpaDefaults = require("webpack-config-single-spa");
 const VueLoaderPlugin = require("vue-loader/lib/plugin");
+const path = require("path");
 
 module.exports = (webpackConfigEnv) => {
   const defaultConfig = singleSpaDefaults({
@@ -14,7 +15,17 @@ module.exports = (webpackConfigEnv) => {
       rules: [
         {
           test: /\.scss$/,
-          use: ["vue-style-loader", "css-loader", "sass-loader"],
+          use: [
+            "vue-style-loader",
+            "css-loader",
+            "sass-loader",
+            {
+              loader: "style-resources-loader",
+              options: {
+                patterns: ["./src/assets/stylesheets/_core.scss"],
+              },
+            },
+          ],
         },
         {
           test: /\.pug$/,
@@ -32,6 +43,10 @@ module.exports = (webpackConfigEnv) => {
           test: /\.vue$/,
           use: ["vue-loader"],
         },
+        {
+          test: /\.svg$/,
+          loader: "svg-inline-loader",
+        },
       ],
     },
     externals: [/^@lms\/.+/],
@@ -40,3 +55,14 @@ module.exports = (webpackConfigEnv) => {
 
   return config;
 };
+
+function addStyleResource(rule) {
+  rule
+    .use("style-resource")
+    .loader("style-resources-loader")
+    .options({
+      patterns: [
+        path.resolve(__dirname, "./src/assets/stylesheets/_core.scss"),
+      ],
+    });
+}

@@ -1,5 +1,7 @@
+@use 'sass:math';
+
 @function strip-unit($num) {
-  @return $num / ($num * 0 + 1);
+  @return  math.div($num, $num * 0 + 1);
 }
 
 @function em($pixels) {
@@ -7,5 +9,5 @@
 }
 
 @function rem($pixels) {
-  @return #{strip-unit($pixels)/16}rem;
+  @return #{calc(strip-unit($pixels) / 16)}rem;
 }
