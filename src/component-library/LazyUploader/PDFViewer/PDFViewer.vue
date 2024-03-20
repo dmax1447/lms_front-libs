@@ -73,7 +73,7 @@
             template(v-else)
               SplideSlide(:key="index" :data-slide-index="index")
                 .plug
-                  img.plug__icon(src="@/assets/images/bad-format.svg")
+                  img.plug__icon(src="../../../assets/images/bad-format.svg")
                   .plug__text К сожалению, просмотр некоторых форматов в данный момент недоступен. Вы можете скачать файл, чтобы просмотреть его содержимое.
       .preloader-container(v-if="!loaded")
         SPreloader
@@ -137,7 +137,8 @@
 </template>
 
 <script>
-import { Splide, SplideSlide } from '@splidejs/vue-splide'
+import  Splide  from '@splidejs/vue-splide/src/js/components/Splide.vue'
+import  SplideSlide  from '@splidejs/vue-splide/src/js/components/SplideSlide.vue'
 import '@splidejs/splide/dist/css/splide.min.css'
 
 import VueZoomer from 'vue-zoomer'

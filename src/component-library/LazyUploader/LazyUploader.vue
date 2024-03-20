@@ -216,7 +216,8 @@
 </template>
 
 <script>
-import { Splide, SplideSlide } from '@splidejs/vue-splide'
+import  Splide  from '@splidejs/vue-splide/src/js/components/Splide.vue'
+import  SplideSlide  from '@splidejs/vue-splide/src/js/components/SplideSlide.vue'
 import '@splidejs/splide/dist/css/splide.min.css'
 import FileViewer from './FileViewer.vue'
 import { SButton } from '@synergy/lms-ui-kit'
